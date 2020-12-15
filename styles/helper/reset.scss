@@ -98,6 +98,11 @@ html {
 	font-size: $font_size;
 }
 
+svg {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 .title {
 	font-family: $title;
 }

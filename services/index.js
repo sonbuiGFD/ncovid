@@ -1,12 +1,18 @@
 import { request } from 'utils/request';
 
 const API = {
-  AUTHENTICATE_TOKEN: '/api/authenticate/token',
+  API_ALL: '/v2/all',
+  API_COUNTRY: '/v2/countries',
 };
 
-export const authenticateTokenService = (token) =>
+export const getTotalData = () =>
   request({
-    url: API.AUTHENTICATE_TOKEN,
-    method: 'POST',
-    data: { token },
+    url: API.API_ALL,
+    method: 'GET',
+  });
+
+export const getCountries = () =>
+  request({
+    url: API.API_COUNTRY,
+    method: 'GET',
   });

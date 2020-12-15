@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { grantType, HostAPIENV } from '@configs';
+import { grantType, HostAPIENV } from '@configs/index';
 // import { getData } from 'utils';
 
 export const request = async ({ host = '', url = '', method = 'GET', params = {}, data = {}, headers = {}, _token, _grantType, onUploadProgress }) => {

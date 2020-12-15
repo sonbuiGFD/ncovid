@@ -1,0 +1,39 @@
+.tooltip {
+	background: #00385b !important;
+	border-color: #104161 !important;
+
+	&.place-top {
+		&::after {
+			border-top-color: #00385b !important;
+		}
+	}
+
+	.country {
+		&__info {
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+		}
+
+		&__icon {
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			margin-right: 10px;
+		}
+
+		&__name {
+			flex: 1;
+			text-transform: uppercase;
+		}
+
+		&__case {
+			font-size: 11px;
+			margin-bottom: 5px;
+		}
+
+		&__time {
+			max-width: 150px;
+		}
+	}
+}
