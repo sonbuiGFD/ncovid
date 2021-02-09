@@ -4,7 +4,7 @@ import { getTotalData, getCountries } from '@services/index';
 
 export default Home;
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const restotal = await getTotalData();
     const resCountries = await getCountries();
